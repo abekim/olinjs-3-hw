@@ -1,0 +1,11 @@
+extends layout
+
+block content
+  h1 Add a New Ingredient
+  p Each ingredient should have a name and price. Please add these attributes accordingly in the form below.
+  form(method="POST", action="/ingredient/create")
+    | Ingredient: 
+    input(type="text", name="ingredient")
+    | Price: 
+    input(type="text", name="price")
+    input(type="submit")

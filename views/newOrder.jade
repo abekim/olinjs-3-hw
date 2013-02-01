@@ -1,0 +1,18 @@
+extends layout
+
+block content
+  h1 Create a New Order
+  div
+    | Name:
+    input(type="text", id="orderName")
+    br
+    br
+    div(id="list of ingredients")
+      each ingred, i in ingreds
+        input(type="checkbox", name=ingred.name, id=ingred.price, value=ingred.name) 
+        =ingred.name + ' $' + ingred.price
+        br
+    br
+    button(id="submitOrder") Submit Order
+  br
+  div(id="newOrder")

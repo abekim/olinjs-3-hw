@@ -1,0 +1,18 @@
+extends layout
+
+block content
+  h2 Welcome to #{title}!
+  br
+  strong 
+    a(href="/ingredient/new")
+      | Want to add a new ingredient?
+    br
+    br
+    a(href="/order/new")
+      | Or maybe you'd like to order a new burger?
+    br
+    br
+    a(href="/orders")
+      | Or possibly, you'd just like to look at existing orders.
+  br
+  img(src="/images/Hardees_MemphisBBQ1.jpg", style="width:818.3px; height:595px;")

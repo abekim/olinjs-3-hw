@@ -1,0 +1,15 @@
+extends layout
+
+block content
+  h1 Create a New Order
+  ul(id="orderlist")
+    each order, i in orders
+      li(class=order._id)
+        div
+        =order.name + ": " + order.ingreds
+        br
+        button(class="completed", id=order._id)
+          | Completed
+        br
+        br
+  
